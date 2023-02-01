@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musical Instruments</title>
+  <link rel="stylesheet" href="MIAN.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+  <script> 
+    document.addEventListener('contextmenu', event=> event.preventDefault()); 
+    document.onkeydown = function(e) { 
+    if(event.keyCode == 123) { 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+    return false; 
+    } 
+    } 
+    </script> 
+  <nav class="first">
+  <a href="index.html">
+    <img src="logo2.png" class="logo">
+  </a>
+    <ul>
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "aboutus.html">About us</a></li>
+      <li><a href = "feedback.html">Feedback</a></li>
+      <li><a href = "External links.html">External links</a></li>
+      <li>
+        <div class="tdnn">
+          <div class="moon">
+         </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+  <nav class="second">
+    <ul>
+      <li><a href="get-started.html">Get started</a></li>
+      <li><a href = "soundproduction.html">How sound is produced</a></li>
+      <li><a href = "characterstics.html">Charecterstics</a></li>
+      <li><a href = "soundtravel.html">Sound Travel</a></li>
+      <li><a href = "types.html">Types</a></li>
+      <li><a href="ear.html">Human Ear</a></li>
+      <li><a href="noise.html">Noise</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <br>
+  <span id="time"></span>
+      <script>
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        let newDate = new Date("2029-09-30");
+        console.log(newDate)
+
+        let yr = newDate.getFullYear();
+        console.log("The year is ", yr);
+
+        let dat = newDate.getDate();
+        console.log("The date is ", dat);
+
+        let month = newDate.getMonth();
+        console.log("The month is ", month);
+
+        let hours = newDate.getHours();
+        console.log("The hours is ", hours);
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        console.log(newDate)
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+        //function darkMode() {
+          //var element = document.body;
+          //element.classList.toggle("dark-mode");
+        //}
+        $('.tdnn').click(function () {
+          $("body").toggleClass('light');
+          $(".moon").toggleClass('sun');
+          $(".tdnn").toggleClass('day');
+        });
+      </script>
+      <div class="main-hdng">
+        Musical Instruments
+      </div>
+      <br><br><br>
+      <div class="cntnt">
+        <ul>
+          <li>
+            The arrangement of sounds in different frequencies called notes in a way that is pleasant to hear is called Music.
+          </li>
+          <br>
+          <li>
+            The instruments which make musical sounds are called musical instruments.
+          </li>
+          <br>
+          <li>
+            Examples of musical instruments are : Sitar, Violen, Guitar, Piano, Flute etc.
+          </li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Types of Musical Instruments :
+      </div>
+      <br><br>
+      <div class="cntnt">
+        <dl>
+          <dd>
+            There are mainly 4 types of musical instruments :
+          </dd>
+        </dl>
+        <ul>
+          <li>
+            Stringed musical instruments
+          </li>
+          <br>
+          <li>
+            Wind musical instruments
+          </li>
+          <br>
+          <li>
+            Membrane musical instruments
+          </li>
+          <br>
+          <li>
+            Plate type musical instruments
+          </li>
+          <br>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Stringed Musical Instruments :
+      </div>
+      <img src="sitar.jpg" alt="image of sitar" id="img">
+      <br><br>
+      <div class="cntnt">
+        <ul>
+          <li>
+            They produce musical sounds by the vibrations of stretched strings.
+          </li>
+          <br>
+          <li>
+            In a stringed musical instrument, thin metal strings (metal wires) are fixed tightly between 2 points.
+          </li>
+          <br>
+          <li>
+            When the stretched string of a musical instrument is plucked or bowed with the fingers of our hands, the strings starts vibrating and produce sounds.
+          </li>
+          <br>
+          <li>
+            The examples of stringed musical instruments are : Sitar, Violen, Guitar, Piano etc.
+          </li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Wind Musical Instruments :
+      </div>
+      <img src="flute-1.jpeg" alt="image of a flute" id="img">
+      <br><br>
+      <div class="cntnt">
+        <ul>
+          <li>
+            They produce musical sounds by the vibrations of air columns inside them.
+          </li>
+          <br>
+          <li>
+            The examples of wind musical instruments are : Trumpet, Flute, Shehnai etc.
+          </li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Membrane type Instruments :
+      </div>
+      <br><br>
+      <img src="tabla-1.jpeg" alt="" id="img">
+      <div class="cntnt">
+        <ul>
+          <li>
+            Membrane is thin sheet of skin.
+          </li>
+          <br>
+          <li>
+            Membrane type musical instruments produce sounds by the vibration of thin, stretched membranes or streched skins.
+          </li>
+          <br>
+          <li>
+            In this a thin membrane fixed tightly over a hollow wooden drum vibrates and produces sound.
+          </li>
+          <br>
+          <li>
+            The examples of membrane type musical instruments are : Tabla, Dholak, Drum etc.
+          </li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Plate type Musical Instruments
+      </div>
+      <img src="cymbals.jpeg" alt="image of cymbals" id="img">
+      <br><br>
+      <div class="cntnt">
+        <ul>
+          <li>
+            They produce musical sounds by the vibration of thick plates or objects made of plate.
+          </li>
+          <br>
+          <li>
+            The examples of Plate type Musical Instruments are : Cymbals, Bell, Noot etc.
+          </li>
+        </ul>
+      </div>
+      <br><br><br>
+</body>
+</html>

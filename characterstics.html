@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <link rel="stylesheet" href="characterstics.css">
+  <title>Characterstics of sound</title>
+</head>
+<body>
+  <script> 
+    document.addEventListener('contextmenu', event=> event.preventDefault()); 
+    document.onkeydown = function(e) { 
+    if(event.keyCode == 123) { 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+    return false; 
+    } 
+    } 
+    </script> 
+  <nav class="first">
+    <img src="logo2.png" class="logo">
+    <ul>
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "aboutus.html">About us</a></li>
+      <li><a href = "feedback.html">Feedback</a></li>
+      <li><a href = "External links.html">External links</a></li>
+      <li>
+        <div class="tdnn">
+          <div class="moon">
+         </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+  <nav class="second">
+    <ul>
+      <li><a href = "soundproduction.html">How sound is produced</a></li>
+      <li><a href = "types.html">Types</a></li>
+      <li><a href = "soundtravel.html">How Sound Travels</a></li>
+      <li><a href = "MIAN.html">Musical Instruments</a></li>
+      <li><a href="get-started.html">Get started</a></li>
+      <li><a href="ear.html">Human Ear</a></li>
+      <li><a href="noise.html">Noise</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <br>
+  <span id="time"></span>
+      <script>
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        let newDate = new Date("2029-09-30");
+        console.log(newDate)
+
+        let yr = newDate.getFullYear();
+        console.log("The year is ", yr);
+
+        let dat = newDate.getDate();
+        console.log("The date is ", dat);
+
+        let month = newDate.getMonth();
+        console.log("The month is ", month);
+
+        let hours = newDate.getHours();
+        console.log("The hours is ", hours);
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        console.log(newDate)
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+        $('.tdnn').click(function () {
+          $("body").toggleClass('light');
+          $(".moon").toggleClass('sun');
+          $(".tdnn").toggleClass('day');
+        });
+      </script>
+      <div class="main-hdng">
+        Characterstics of Sound
+      </div>
+      <br><br>
+      <div class="mini-hdng">
+        Introduction :
+      </div>
+      <br>
+      <div class="cntnt">
+        <ul>
+          <li>We know that not all sounds are same. For example, some sounds are loud while some are quiet.</li>
+          <br>
+          <li>So we can say that there are different characterstics of sound which differentiates one sound from other.</li>
+          <br>
+          <li>The main characterstics of sound are amplitude , time period and frequency.</li>
+          <br>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Note :
+      </div>
+      <br><br>
+      <div class="cntnt">
+        &nbsp;Please note that we will be using the example of oscillations of a simple pendulum to explain the terms amplitude, time period and frequency etc. Although a simple pendulum does not produce sound wave, it will help us to understand the terms better
+      </div>
+      <br><br><br><br>
+      <div class="mini-hdng">
+        Amplitude :
+      </div>
+      <img src="Simple-Pendulum-1.jpeg" id="img2" alt="simple pendulum figure">
+      <br><br>
+      <div class="cntnt">
+        Before we start, we must know the meaning of the term oscillation related to a simple pendulum. In reference to the given figure, when the bob is pulled to the position A and is released, then the bob goes to position C and comes back again to position A and this goes on till the time the speed gets slow and it stops.
+        When the bob went from position A to position C and returned back to position A, we say it has completed 1 oscillation.
+        <br><br>
+        <ul>
+          <li>When a simple pendulum vibrates, its bob goes to equal distances on either side of its central position / mean position.</li>
+          <br>
+          <li>The maximum displacement of bob from its mean position or central position during oscillation is known as amplitude of oscillation.</li>
+          <br>
+          <li>In the figure, AB is a amplitude of oscillation or amplitude of vibration (both are one of the same thing). Similarily BC is also a amplitude of oscillation.</li>
+          <br>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Time period :
+      </div>
+      <br><br>
+      <div class="cntnt">
+        <ul>
+          <li>The time taken by the bob to complete one oscillation is referred to as the time period of pendulum.</li>
+          <br>
+          <li>Since this time period is very short, to find it we divide the total time by the toal number of oscillations. This gives us the time period of one oscillation also known as time period of pendulum.</li>
+          <br>
+          <li>For example, in 40 seconds there are 10 oscillations, then the time period of pendulum will be 40/10 =  4.</li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Frequency :
+      </div>
+      <br><br>
+      <div class="cntnt">
+        <ul>
+          <li>The number of oscillations made in one second is called the frequency of oscillation.</li>
+          <br>
+          <li>The unit of frequency of oscillation of a vibrating object is hertz(Hz).</li>
+          <br>
+          <li>For example, if an object makes 1 oscillation per second, its frequency is said to be 1 hertz.</li>
+          <br>
+          <li>To find the frequency, divide the number of oscillation by the time taken.</li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Loudness :
+      </div>
+      <br><br>
+      <img src="Wave-Function.jpeg" alt="loudness, pitch image" id="img2">
+      <div class="cntnt">
+        <ul>
+          <li>If more energy is supplied to an object by hitting it more strongly, then the object will vibrate with greater amplitude and produce a louder sound.</li>
+          <br>
+          <li>Hence, if amplitude increases, loudness increases.</li>
+          <br>
+          <li>The loudness of sound depends upon the square of the amplitude.</li>
+          <br>
+          <li>If amplitude is doubled, loudness increases 4 times.</li>
+          <br>
+          <li>Unit of loudness is decibel(dB).</li>
+          <br>
+          <li>
+            Table of common sound loudness is given:
+            <br><br>
+            <table border="2">
+              <tr>
+                <th>Sound</th>
+                <th>Decibel (dB) (approx values)</th>
+              </tr>
+              <tr>
+                <td>Whisper</td>
+                <td>About 30</td>
+              </tr>
+              <tr>
+                <td>Normal conversation&nbsp;</td>
+                <td>50-60</td>
+              </tr>
+              <tr>
+                <td>Loud music</td>
+                <td>100-120</td>
+              </tr>
+              <tr>
+                <td>Aeroplane</td>
+                <td>120-140</td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Pitch :
+      </div>
+      <img src="pitch_graph.jpg" alt="Pitch_bar_graph" id="img2">
+      <br><br>
+      <div class="cntnt">
+        <ul>
+          <li> Pitch is that characterstic of sound by which we can distinguish between different sounds of same loudness.</li>
+          <br>
+          <li>Pitch depends upon the frequency of vibration ( oscillation ).</li>
+          <br>
+          <li>If the frequency of vibration is low, the sound produced has a low pitch</li>
+          <br>
+          <li>Frequecy is directly proportional to pitch.</li>
+          <br>
+          <li>For example, a man's voice is flat and deep and has low pitch whereas woman's voice is <i><b><a href='https://www.google.com/search?q=meaning+of+shrill&rlz=1C1ONGR_enIN976IN976&oq=meaning+&aqs=chrome.0.69i59l2j69i57j0i433i512j0i512j0i433i512j0i131i433l2j0i433i512l2.3054j1j7&sourceid=chrome&ie=UTF-8'>shrill</a></b></i> and has high pitch.</li>
+          <br>
+          <li>A baby's voice is even more shrill than a woman's voice and has even higher pitch.</li>
+        </ul>
+      </div>
+      <br><br><br>
+      <div class="mini-hdng">
+        Quality :
+      </div>
+      <br><br>
+      <div class="cntnt">
+        <ul>
+          <li>Quality is that characterstic of sound which enables us to distinguish between the sounds produced by different sound producing objects even if the loudness and pitch of both the sounds is the same.</li>
+          <br>
+          <li>We are able to determine the quality of sound by looking at their sound waves since different sound producing object will produce sound waves of different shapes.</li>
+          <br>
+          <li>For example, the quality of sound of a guitar , sitar and flute will differ even if they are of the same loudness and pitch.</li>
+        </ul>
+      </div>
+      <br><br>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.logo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  width: 300px;
+  height: 70px;
+}
+
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+nav ul li::after {
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.25s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  color: #3a0ca3;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hdng {
+  background: linear-gradient(to right, #21f3c9, #08c5ff, #2077cf, #1316ad, rgb(34, 4, 98));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#img {
+  float: right;
+  margin-left: 25px;
+  margin-right: 20px;
+  border-radius: 10%;
+  width: 500px;
+}
+
+#img:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+#img2 {
+  float: right;
+  margin-left: 25px;
+  margin-right: 20px;
+  width: 400px;
+}
+
+#img2:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.cntnt {
+  font-size: 25px;
+  background: linear-gradient(to right, #45cf05, #04802a);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 100;
+  font-family: Trebuchet MS;
+  text-align: left;
+}

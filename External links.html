@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="elinks.css">
+  <title>External References</title>
+</head>
+<body>
+  <script> 
+    document.addEventListener('contextmenu', event=> event.preventDefault()); 
+    document.onkeydown = function(e) { 
+    if(event.keyCode == 123) { 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+    return false; 
+    } 
+    } 
+    </script> 
+  <nav>
+  <a href="index.html">
+    <img src="logo2.png" class="logo">
+  </a>
+    <ul>
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "aboutus.html">About us</a></li>
+      <li><a href = "feedback.html">Feedback</a></li>
+      <li><a href = "Our goal.html">Our Goal</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <br>
+  <div class="main-hdng">
+    External links
+  </div>
+  <br><br>
+  <div class="cntnt">
+    Here are a few external videos and links for your better understanding :
+  </div>
+  <br><br><br>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eCTnAyc9m3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br><br>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q9T9wtTwCpE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br><br>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qEwDDUSohMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br><br>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_aY2Dsgdp3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <br><br><br>
+  <button onclick="window.location.href = 'https://byjus.com/cbse-notes/cbse-class-8-science-notes-chapter-13-sound/';" class="button">Notes by Byjus</button><button onclick="window.location.href = 'https://www.vedantu.com/revision-notes/cbse-class-8-science-notes-chapter-13';" class="button">Pdf of notes by vedantu</button><button onclick="window.location.href = 'https://www.askiitians.com/revision-notes/class-8-science/sound/';" class="button">Notes by Askiitians</button>
+</body>
+</html>

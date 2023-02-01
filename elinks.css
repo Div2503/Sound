@@ -1,0 +1,96 @@
+.logo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  width: 300px;
+  height: 70px;
+}
+
+nav {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  font-family: "Rubik", sans-serif;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+nav ul li::after {
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.25s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+.main-hdng {
+  font-size: 50px;
+  background: linear-gradient(to right, #D4145A, #FBB03B);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cntnt {
+  font-size: 25px;
+  background: linear-gradient(to right, #bf2b0a, #9e12c1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 100;
+  font-family: Trebuchet MS;
+  text-align: left;
+}
+
+.mini-hdng {
+  font-size: 50px;
+  background: linear-gradient(to right, #C33764, #1D2671);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+  background-color: black;
+  border: 2px solid rgb(6, 214, 247);
+  color: rgb(5, 214, 250);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: #009688;
+  color: blue;
+  transition: 0.5s;
+  border: 2px solid rgb(10, 54, 211);
+}

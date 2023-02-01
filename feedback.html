@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="feedback.css">
+  <title>Feedback</title>
+</head>
+<body>
+<script> 
+  document.addEventListener('contextmenu', event=> event.preventDefault()); 
+  document.onkeydown = function(e) { 
+  if(event.keyCode == 123) { 
+  return false; 
+  } 
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+  return false; 
+  } 
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+  return false; 
+  } 
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+  return false; 
+  } 
+  } 
+  </script> 
+  <!--<div class="front">-->
+  <nav>
+    <img src="logo.png" class="logo">
+    <ul>
+      <li><a href = "aboutus.html">About us</a></li>
+      <li><a href = "Our goal.html">Our Goal</a></li>
+      <li><a href = "index.html">Home</a></li>
+      <li><a href = "elinks.html">External links</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <h1><center>Feedback</center></h1>
+  <br>
+      <p>We would be very happy to read your reviews on the website. Kindly send us the feedback using following form:</p>
+      <br>
+<form id="my-form" action="https://formspree.io/f/mbjbendj" method="POST" class="formContainer">
+  <div class="col50 inputBx">
+  <label><font size="4">Name:</font></label>
+  <input type="text" name="name">
+  <br><br>
+  <label><font size="4">Email:</font></label>
+  <input type="email" name="email" />
+  </div>
+  <div class="col100 inputBx">
+  <label><font size="4">Message:</font></label>
+  <input type="text" name="message" />
+  <br><br>
+  <button id="my-form-button">Submit</button>
+  </div>
+  <p id="my-form-status"></p>
+</form>
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+</div>
+<!--<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">First Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Last Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="country">Country</label>    
+      </div>    
+      <div class="col-75">    
+        <select id="country" name="country">    
+            <option value="none">Select Country</option>    
+          <option value="australia">Australia</option>    
+          <option value="canada">Canada</option>    
+          <option value="usa">USA</option>    
+          <option value="russia">Russia</option>    
+          <option value="japan">Japan</option>    
+          <option value="india">India</option>    
+          <option value="china">China</option>    
+        </select>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>    
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+    </div>    
+  </form>    
+</div>-->     
+</body>
+</html>

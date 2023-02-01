@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Our goal.css">
+  <title>Our goal</title>
+</head>
+<body oncontextmenu="false">
+  <script> 
+    document.addEventListener('contextmenu', event=> event.preventDefault()); 
+    document.onkeydown = function(e) { 
+    if(event.keyCode == 123) { 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+    return false; 
+    } 
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+    return false; 
+    } 
+    } 
+    </script> 
+  <nav class="first">
+    <img src="logo2.png" class="logo">
+      <ul>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "aboutus.html">About us</a></li>
+        <li><a href = "feedback.html">Feedback</a></li>
+        <li><a href = "External links.html">External links</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <div class="hdng">
+      <center>Our Goal</center>
+    </div>
+    <br><br><br>
+    <img src="goalimg.jpeg" alt="Quote on education" id="img">
+    <div class="cntnt">
+      Here at Coding Clan, we make sure that we are able to share the knowledge we know to others so that others can utilize this knowledge to make the world a better place. We believe that in a way, spreading knowledge educates people and only a literate population can help the world to recover from all the things going on like global warming, wars etc. Only a literate population can help in the rapid development of humanity. We encourage everybody out there to do the same and help in the spread of knowledge. This world requires hardworking, smart and honest people and these qualtites can be used by people only if they are literate since from it they will learn moral values also along with conquering knowledge.
+    </div>
+</body>
+</html>
